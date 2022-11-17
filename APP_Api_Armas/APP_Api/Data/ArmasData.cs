@@ -16,7 +16,7 @@ namespace APP_Api
         {
             ConexionBD objEst = new ConexionBD();
             string sentencia;
-            sentencia = "EXECUTE USP_Registrar '" + ObjUsuario.Id_Arma + "','" + ObjUsuario.Nombre_Arma + "','" + ObjUsuario.Cantidad_Arma + "','" + ObjUsuario.Costo_Arma + "','" + ObjUsuario.Tipo_Arma + "','" + ObjUsuario.Fecha_Arma + "','" + ObjUsuario.Balas_Ama + "','" + ObjUsuario.Permiso_Arma + "','" + ObjUsuario.Accesorios_Arma + "','" + ObjUsuario.Descripcion_Arma + "'";
+            sentencia = "EXECUTE USP_Registrar '" + ObjUsuario.Id_Arma + "','" + ObjUsuario.Nombre_Arma + "','" + ObjUsuario.Cantidad_Arma + "','" + ObjUsuario.Costo_Arma + "','" + ObjUsuario.Tipo_Arma + "','" + ObjUsuario.Balas_Ama + "','" + ObjUsuario.Permiso_Arma + "','" + ObjUsuario.Accesorios_Arma + "','" + ObjUsuario.Descripcion_Arma + "'";
             if (!objEst.EjecutarSentencia(sentencia, false))
             {
                 objEst = null;
@@ -32,7 +32,7 @@ namespace APP_Api
         {
             ConexionBD objEst = new ConexionBD();
             string sentencia;
-            sentencia = "EXECUTE USP_Actualizar '" + ObjUsuario.Id_Arma + "','" + ObjUsuario.Nombre_Arma + "','" + ObjUsuario.Cantidad_Arma + "','" + ObjUsuario.Costo_Arma + "','" + ObjUsuario.Tipo_Arma + "','" + ObjUsuario.Fecha_Arma + "','" + ObjUsuario.Balas_Ama + "','" + ObjUsuario.Permiso_Arma + "','" + ObjUsuario.Accesorios_Arma + "','" + ObjUsuario.Descripcion_Arma + "'";
+            sentencia = "EXECUTE USP_Actualizar '" + ObjUsuario.Id_Arma + "','" + ObjUsuario.Nombre_Arma + "','" + ObjUsuario.Cantidad_Arma + "','" + ObjUsuario.Costo_Arma + "','" + ObjUsuario.Tipo_Arma + "','" + ObjUsuario.Balas_Ama + "','" + ObjUsuario.Permiso_Arma + "','" + ObjUsuario.Accesorios_Arma + "','" + ObjUsuario.Descripcion_Arma + "'";
             if (!objEst.EjecutarSentencia(sentencia, false))
             {
                 objEst = null;

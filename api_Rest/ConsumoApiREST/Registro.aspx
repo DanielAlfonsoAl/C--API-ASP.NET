@@ -143,7 +143,7 @@
                   url: "https://localhost:44381/api/Armas/",
                   contentType: "application/json",
                   data: JSON.stringify(data), // access in body
-              }).done(function (response) {
+              }).done(function (response) { 
                   console.log(data)
                   console.log(response);
                   if (response) {
@@ -199,14 +199,14 @@
           ) {
               console.log("respuesta:");
               console.log(response);
-              $("#txtNombreArma").val(response.Nombre_Arma),
-                  $("#txtCantidadArma").val(response.Cantidad_Arma),
-                  $("#txtCostoArma").val(response.Costo_Arma),
-                  $("#txtTipoArma").val(response.Tipo_Arma),
-                  $("#txtBalasArma").val(response.Balas_Ama),
-                  $("#txtPermisoArma").val(response.Permiso_Arma),
-                  $("#txtAcesoriosArma").val(response.Accesorios_Arma),
-                  $("#txtDescripcionArma").val(response.Descripcion_Arma);
+              $("#txtNombreArma").val(response[0].Nombre_Arma),
+                  $("#txtCantidadArma").val(response[0].Cantidad_Arma),
+                  $("#txtCostoArma").val(response[0].Costo_Arma),
+                  $("#txtTipoArma").val(response[0].Tipo_Arma),
+                  $("#txtBalasArma").val(response[0].Balas_Ama),
+                  $("#txtPermisoArma").val(response[0].Permiso_Arma),
+                  $("#txtAcesoriosArma").val(response[0].Accesorios_Arma),
+                  $("#txtDescripcionArma").val(response[0].Descripcion_Arma);
           });
       }
 
